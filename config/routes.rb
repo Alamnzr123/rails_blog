@@ -6,7 +6,10 @@ Rails.application.routes.draw do
   #get "/articles", to: "articles#index" #without resources method
   #get "/articles/:id", to: "articles#show" #without resources method
 
-  resources :articles  #Rails provide route method called resources
+  #Rails provide route method called resources
+  resources :articles do
+    resources :comments
+  end
   
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
   # Can be used by load balancers and uptime monitors to verify that the app is live.

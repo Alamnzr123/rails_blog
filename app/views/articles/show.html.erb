@@ -9,3 +9,13 @@
         turbo_confirm: "Are you sure ?"
     } %></li>
 </ul>
+
+<h2>Comment</h2>
+#rendering partial
+<%= render @article.comments %>
+
+<h2>Add comment:</h2>
+#rendering partial
+<%= render "comments/form", article: @article %>
+
+<% end %>
