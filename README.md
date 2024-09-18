@@ -73,3 +73,16 @@ fourth, migrate our Models
 
 `ruby bin/rails db:migrate`
 
+## How run Database using Console
+
+- run `ruby bin/rails console`
+
+## USERNAME AND PASSWORD
+
+```
+    name: "dhh", 
+    password: "secret"
+```
+
+
+
